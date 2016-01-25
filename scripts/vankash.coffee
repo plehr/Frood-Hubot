@@ -505,4 +505,4 @@ module.exports = (robot) ->
   ]
 
   robot.hear /(nahom|vankash)/i, (msg) ->
-    msg.send "Hey @vankash, #{msg.random(greetings)} #{Base64.decode(msg.random(urls))}"
+    msg.send "Hey @vankash, #{msg.random(greetings)} #{@Base64.decode64(msg.random(urls))}"
